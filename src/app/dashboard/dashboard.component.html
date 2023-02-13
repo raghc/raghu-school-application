@@ -1,0 +1,16 @@
+<header>
+    <div class="parent">
+
+        <div class="left">
+            <h5 class="br" routerLink="student-data">all students</h5>
+            <h5 class="br" routerLink="create-student-form">create student </h5>
+
+            <button class="btn  brt" (click)="logout()">logout</button>
+        </div>
+
+
+        <div class="right">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</header>

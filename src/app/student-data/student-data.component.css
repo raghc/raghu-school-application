@@ -1,0 +1,44 @@
+.parent{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter{
+    height: 50%;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sort{
+    height: 50%;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rrr{
+    height: 60%;
+    width: 60%;
+}
+.rr{
+    height: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    background-color: rgb(55, 145, 55);
+}
+.rrrr{
+    height: 60%;
+    width: 60%;
+    background-color: rgb(227, 245, 251);
+    border-radius: 10px;
+}
+.r{
+    height: 60%;
+    background-color: rgb(206, 227, 234);
+    border-radius: 10px;
+
+}

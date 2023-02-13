@@ -1,0 +1,110 @@
+
+    <div class="parent">
+
+        <div class="child1">
+            <div class="datails">
+                <div class="d1"> personal and professional details about student</div>
+                <div class="d2">
+
+                   <label class="name">Name</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.name}}</span>
+                   <br>
+
+                   <label class="name">Father Name</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.fatherName}}</span>
+                   <br>
+
+                   <label class="name">DOB</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.dob}}</span>
+                   <br>
+
+                   <label class="name">Class</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.class}}</span>
+                   <br>
+
+                   <label class="name">Roll No</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.id}}</span>
+                   <br>
+
+                   <label class="name">Email Id</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.email}}</span>
+                   <br>
+
+                   <label class="name">Accommodation</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.type}}</span>
+                   <br>
+
+                   <label class="name">Hostel Fee</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.hostelfee | price}}</span>
+                   <br>
+
+                   <label class="name">Bus Fee</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.busfee | price}}</span>
+                   <br>
+
+                   <label class="name">Joining date</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.createdAt}}</span>
+                   <br>
+
+                </div>
+            </div>
+            <div class="image">  <img src="{{student.avatar}}" alt="" height="100%" width="100%">  </div>
+        </div>
+
+        <div class="child2">
+
+            <div class="marks">
+
+                <div class="d1">student marklist (SSC,  Intermediate,  Gradution)</div>
+
+                <div class="d2">
+
+                    <label class="name">Study</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[0].class}}</span>
+                    <br>   
+
+                    <label class="name">Year of pass</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[0].year}}</span>
+                    <br>  
+                    
+                    <label class="name">Percentage</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[0].percentage | percentage}}</span>
+                    <br>  
+
+                    <hr>
+
+                    <label class="name">Study</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[1].class}}</span>
+                    <br>   
+
+                    <label class="name">Year of pass</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[1].year}}</span>
+                    <br>  
+                    
+                    <label class="name">Percentage</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[1].percentage | percentage}}</span>
+                    <br>  
+
+                    <hr>
+
+                    <label class="name">Study</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[2].class}}</span>
+                    <br>   
+
+                    <label class="name">Year of pass</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[2].year}}</span>
+                    <br>  
+                    
+                    <label class="name">Percentage</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.marks[2].percentage | percentage}}</span>
+                    <br>  
+
+                    <hr>
+
+
+
+                </div>
+            </div>
+
+            <div class="address">
+                    <div class="d1">student native address</div>
+
+                    <div class="d2">
+
+                        <label class="name brt">Address</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <div class="add">{{student.address.addressLine}}</div>
+
+                        <label class="name brt">Capital city</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.address.city}}</span>
+                        <br>
+
+                        <label class="name brt">State</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.address.state}}</span>
+                        <br>
+
+                        <label class="name brt">Pincode</label><span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="interpolation">{{student.address.pincode}}</span>
+                        <br>
+
+                    </div>
+            </div>
+        </div>
+
+    </div>

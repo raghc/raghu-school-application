@@ -1,0 +1,69 @@
+
+<div class="parent">
+
+    <div class="filter">
+        <input [(ngModel)]="term" class="form-control me-2 rrr" type="search" placeholder="filter" aria-label="Search" >
+        <button class="btn btn-outline-success rr" type="submit" (click)="filter()">Search</button>
+
+    </div>
+
+    <div class="sort">
+        <select class="rrrr" [(ngModel)]="colomn">
+            <option>id</option>
+            <option>name</option>
+            <option>fatherName</option>
+            <option>class</option>
+            <option>email</option>
+            <option>city</option>
+
+        </select>
+        <select class="r" [(ngModel)]="order">
+            <option>asc</option>
+            <option>desc</option>
+        </select>
+        <button class="btn btn-outline-success rr" type="search" (click)="sort()">Search</button>
+
+    </div>
+
+</div>
+
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Class</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students ">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.fatherName}}</td>
+            <td>{{student.class}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.address.city}}</td>
+            <td><button type="button" class="btn btn-info" (click)="view(student.id)">View</button></td>
+            <td><button type="button" class="btn btn-success" (click)="edit(student.id)">Edit</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="delete(student.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<select [(ngModel)]="limit" (change)="calcTotalnumber()" >
+    <option>1</option>
+    <option>4</option>
+    <option>5</option>
+    <option>10</option>
+</select>
+<ul  class="pagination" >
+    <li *ngFor="let page of [].constructor(totalpages); let i = index"  (click)="pagination(i+1)"><a class="page-link">{{i+1}}</a></li>
+</ul>

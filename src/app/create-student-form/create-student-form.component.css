@@ -1,0 +1,25 @@
+label{
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 20%;
+    color: rgb(23, 54, 23);
+    font-size: 30px;
+    font-weight: 700;
+}
+.brt{
+    width: 20%;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+.br{
+    margin-left: 60%;
+    width: 20%;
+    margin-top: 3%;
+    background-color: rgb(243, 23, 23);
+    color: white;
+}
+.brr{
+    margin-left: 60%;
+    width: 20%;
+    margin-top: 3%;
+}
